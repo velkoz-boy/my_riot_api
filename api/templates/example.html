@@ -1,0 +1,24 @@
+{% for match in data.matches %}
+    <table>
+        <tr>
+            <th>platformId</th>
+            <th>gameId</th>
+            <th>champion</th>
+            <th>queue</th>
+            <th>season</th>
+            <th>timestamp</th>
+            <th>role</th>
+            <th>lane</th>
+        </tr>
+        <tr>
+            <th>{{ match.platformId }}</th>
+            <th>{{ match.gameId }}</th>
+            <th>{{ match.champion }}</th>
+            <th>{{ match.queue }}</th>
+            <th>{{ match.season }}</th>
+            <th>{{ match.timestamp }}</th>
+            <th>{{ match.role }}</th>
+            <th>{{ match.lane }}</th>
+        </tr>
+    </table>
+{% endfor %}
